@@ -21,6 +21,6 @@ int main(){
     casadi::DM sol_state, sol_control;
     if(ok) solver.getSolution(sol_state, sol_control);
 
-    std::cout << sol_state << "\n\n" << sol_control << std::endl;
+    std::cout << "state:\n" << sol_state << "\n\ncontrol:\n" << sol_control << std::endl;
     return 0;
 }
