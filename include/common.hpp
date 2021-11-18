@@ -9,9 +9,13 @@ typedef struct{
 
 typedef struct{
     int phaseLength;
+    double time;
     costWeights _costWeights;
     double solverVerbosity;
-    //availableSolvers = {"ma27", "ma57", "ma77", "ma86", "ma97", "pardiso", "wsmp", "mumps"};
+    /*
+    ipopt's available linear solvers = {"ma27", "ma57", "ma77", "ma86", "ma97", "pardiso", "wsmp", "mumps"};
+    used for it's interior point method
+    */
     std::string ipoptLinearSolver;
 }Settings;
 

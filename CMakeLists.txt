@@ -6,7 +6,7 @@ find_package(casadi REQUIRED)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-add_library(cartpole_solver src/solver.cpp)
+add_library(cartpole_solver src/DirectTranscriptSolver.cpp src/DirectCollocationSolver.cpp) 
 target_link_libraries(cartpole_solver casadi)
 
 add_executable(mytest src/test.cpp)
